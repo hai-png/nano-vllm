@@ -1,3 +1,5 @@
+<path>pyproject.toml</path>
+<update>
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
@@ -15,13 +17,13 @@ dependencies = [
     "torch>=2.4.0",
     "triton>=3.0.0",
     "transformers>=4.51.0",
-    "flash-attn",
     "xxhash",
 ]
 
 [project.urls]
-Homepage="https://github.com/GeeeekExplorer/nano-vllm"
+Homepage="https://github.com/hai-png/nano-vllm"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["nanovllm*"]
+</update>
