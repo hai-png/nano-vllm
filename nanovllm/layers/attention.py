@@ -1,5 +1,3 @@
-<path>nanovllm/layers/attention.py</path>
-<update>
 import torch
 from torch import nn
 import torch.nn.functional as F
@@ -127,4 +125,3 @@ class Attention(nn.Module):
             
             out = F.scaled_dot_product_attention(q_b, k_b, v_b, attn_mask=mask, scale=self.scale)
             return out.transpose(1, 2)
-</update>
